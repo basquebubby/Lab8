@@ -31,4 +31,3 @@ while playerHealth > 0:
     print "You defeat the evil monster!! Hooray!!"
 if playerHealth <= 0:
     print "The monster defeated you. Try again!"
-    monsterHealth == -1
