@@ -6,7 +6,7 @@ swordDmg = 10
 fireballDmg = 30
 print "A monster approaches! Prepare to fight!"
 print "~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~"
-while monsterHealth > 0:
+while playerHealth > 0:
     print "You have " + str(playerHealth) + " health."
     print "The monster has " + str(monsterHealth) + " health."
     print "~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~"
@@ -28,8 +28,7 @@ while monsterHealth > 0:
         monsterHealth = int(monsterHealth) - int(fireballDmg)
     damageByMonster = random.randint(1,35)
     playerHealth = int(playerHealth) - int(damageByMonster)
-    if playerHealth <= 0:
-        print "The monster defeated you. Try again!"
-        monsterHealth == -1
-if playerHealth > 0:
     print "You defeat the evil monster!! Hooray!!"
+if playerHealth <= 0:
+    print "The monster defeated you. Try again!"
+    monsterHealth == -1
